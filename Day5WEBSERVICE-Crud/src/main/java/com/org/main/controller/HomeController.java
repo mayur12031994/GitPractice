@@ -38,6 +38,7 @@ public class HomeController {
 	public String deletestudent(@PathVariable int stuId)
 	{
 		ssi.deleteStudent(stuId);
+		system.out.println ("git_practice");
 		return "delete rocord";
 	}
 	@PutMapping(value="/updatestudent/{stuId}")
